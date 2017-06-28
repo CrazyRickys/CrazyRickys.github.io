@@ -27,16 +27,20 @@ body, html {height: 100%}
 
 <div class="bgimg w3-display-container w3-text-white">
   <div class="w3-display-topright w3-jumbo w3-hover-text-red">
-    <p>Crazy Ricky's</p><br><h1>Damn Good Food</h1>
+    <p style="text-shadow:5px 5px 10px blue">Crazy Ricky's</p><br><h1 style="text-shadow:5px 5px 10px blue">Damn Good Food</h1>
   </div>
 
 
 
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
-    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">catering</button></p>
+    <p><button onclick="document.getElementById('merch').style.display='block'" class="w3-button w3-black">merchandise</button></p>
+
     <p><button class="w3-button w3-black"><a href="https://www.ubereats.com/austin/food-delivery/crazy-rickys/8X46CIiPRfabM7DkLQmsFA/" class="fa fa-cutlery w3-text-xsmall w3-hover-grey" style= "text-decoration: none;" target="_blank"><span style="font-family: 'Raleway'"> uber eats</span></button></a></p>
-    <p><button class="w3-button w3-black"><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" class="fa fa-facebook-official" style="text-decoration: none" target="_blank">              </button></a></p>
+
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">catering</button></p>
+    
+    <p style="position: relative; z-index: 1;"><button class="w3-button w3-black"><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" class="fa fa-facebook-official" style="text-decoration: none" target="_blank">              </button></a></p>
   </div>
   <div class="w3-display-bottomleft w3-container w3-black ">
     <p class="w3-xlarge w3-opacity-off">tuesday-sunday 6pm-3am</p>
@@ -94,6 +98,25 @@ body, html {height: 100%}
    
   </div>
 </div>
+
+<!-- adding a merchandise modal -->
+
+<div id="merch" class="w3-modal ferry">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('merch').style.display='none'" class="w3-button w3-display-topright w3-large">X X X</span>
+      <h1>Coming Soon!!</h1>
+    </div>
+    <div class="w3-container">
+    <a href="#">
+    <img src="burglarWhite.jpg" alt= "shirt" height="275" width="250" style="box-shadow: 10px 10px 5px grey; margin-right: 15px; margin-left: 24px;"></a>
+    <a href="#">
+    <img src="burglarColor.jpg" alt= "shirt" height="255" width="255" style="box-shadow: 10px 10px 5px grey; margin-right: 15px; margin-bottom: 11px;"></a>
+    <a href="#">
+    <img src="tongue.jpg" alt= "shirt" height="275" width="250" style="box-shadow: 10px 10px 5px grey"></a>
+    </div></div></div>
+
+
 <!-- <script>var modal = document.getElementById('contact');
 window.onclick = function(event){if (event.target == modal){
   modal.style.display = "none";
@@ -130,12 +153,17 @@ window.onclick = function(event){if (event.target == modal){
 window.onclick = function(event){
   var menuModal = document.getElementById('menu');
   var contactModal = document.getElementById('contact');
+  var merchModal = document.getElementById('merch')
   if (event.target == menuModal){
     menuModal.style.display = "none";
   }else if(event.target == contactModal){
     contactModal.style.display = "none";
   }
+   else if(event.target == merchModal){
+    merchModal.style.display = "none";
+   }
 }
+
 </script>
 </body>
 </html>
