@@ -26,10 +26,45 @@ body, html {height: 100%}
 <body>
 
 <div class="bgimg w3-display-container w3-text-white">
-  <div class="w3-display-topright w3-jumbo w3-hover-text-red">
-    <p style="text-shadow:5px 5px 10px blue">Crazy Ricky's</p><br><h1 style="text-shadow:5px 5px 10px blue">Damn Good Food</h1>
+<div class= "w3-row">
+<div class="w3-center"></div>
+  <div class="w3-center w3-jumbo w3-hover-text-red">
+    <p class ="logo">Crazy Ricky's</p><br><h1 class="logo">Damn Good Food</h1>
+</div>
+  <div class="w3-center"></div>
+    <!-- <p style="text-shadow:3px 2px 3px black">Crazy Ricky's</p><br><h1 style="text-shadow:3px 2px 3px black">Damn Good Food</h1> -->
   </div>
+  </div>
+<style type="text/css">
 
+  .logo {
+    animation: logo 1s 0s ease infinite;
+    -moz-animation: logo 1s 0s ease infinite;
+    /* Firefox */
+    -webkit-animation: logo 1s 0s ease infinite;
+    /* Safari and Chrome */
+    -o-animation: logo 1s 0s ease infinite;}
+    
+    @keyframes logo {
+    0%,
+    100% {
+    text-shadow: 
+    -.1vw 0vw .1vw #FED128, -.15vw 0vw .2vw #FED128, -.2vw 0vw .2vw #FED128, 
+    -.1vw 0vw 3vw #F0130B, -.2vw 0vw 3vw #F0130B, -.4vw 0vw 3vw #F0130B,
+    -.1vw 0vw 5vw #F0130B, -.2vw 0vw 5vw #F0130B, -.4vw 0vw .8vw #F0130B, .2vw 0vw 10vw #F0130B;
+      color: #FED128;
+    }
+    50% {
+    text-shadow: 
+    -.1vw 0vw .1vw #705C12, -.15vw 0vw .2vw #705C12, -.2vw 0vw .2vw #705C12, 
+    -.1vw 0vw .1vw #5C0704, -.2vw 0vw .1vw #5C0704, -.4vw 0vw .1vw #5C0704,
+    -.1vw 0vw .2vw #5C0704, -.2vw 0vw .2vw #5C0704, -.4vw 0vw .2vw #5C0704, .2vw 0vw .5vw #5C0704;
+      color: #705C12;
+    }
+  }
+  
+    }
+</style>
 
 
   <div class="w3-display-topleft w3-container w3-xlarge">
@@ -130,7 +165,7 @@ window.onclick = function(event){if (event.target == modal){
     </div>
     <div class="w3-container">
       <p>We Cater! Send a Message about your plans or just send a message to Crazy Ricky!:</p>
-      <form method="POST" action="https://formspree.io/apekearo@gmail.com">
+      <form method="POST" action="https://formspree.io/crazyrickyatx@gmail.com">
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" name="name" required name="Name"></p>
         <p><input class="w3-input w3-padding-16 w3-border" name="phone" type="number" placeholder="Your Phone Number" required name="People"></p>
         <p><input class="w3-input w3-padding-16 w3-border" name="date" type="datetime-local" placeholder="Date and time" required name="date" id = "date"></p>
