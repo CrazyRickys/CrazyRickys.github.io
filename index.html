@@ -60,30 +60,189 @@ body, html {height: 100%}
       color: #705C12;
     }
   }
-  
+ /* ***********************the button effects*/
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+:focus{
+  outline: none;
+}
+/*body{
+  background: #77bfa1;
+}*/
+
+.rectangle{
+  margin: 3rem auto;
+  max-width: 660px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+button {
+    /*overflow: visible;*/
+    border: 0;
+  padding: 0;
+  margin: 1.8rem;
+}
+.btn.striped-shadow span {
+    display: block;
+    position: relative;
+    z-index: 2;
+    border: 4px solid;
+}
+/*.btn.striped-shadow.white span {
+    border-color: #fff;
+    color: #fff;
+    background: #77bfa1;
+}
+
+.btn.striped-shadow.blue span {
+    border-color: #4183D7;
+    background: #77bfa1;
+  color: #4183D7;
+}*/
+.btn.striped-shadow.dark span {
+    border-color: #F0130B;
+    background: #FED128;
+  /*color: #393939;*/
+}
+
+.btn {
+    font-family: 'Raleway', sans-serif;
+    height: 80px;
+    line-height: 65px;
+    display: inline-block;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 1.35rem;
+    width: 250px;
+    transition: opacity .3s,z-index .3s step-end,-webkit-transform .3s;
+    transition: opacity .3s,z-index .3s step-end,transform .3s;
+    transition: opacity .3s,z-index .3s step-end,transform .3s,-webkit-transform .3s;
+    z-index: 1;
+    /*background-color: transparent;*/
+    cursor: pointer;
+}
+
+.btn {
+    width: 155px;
+    height: 48px;
+    line-height: 38px;
+}
+
+/*button.btn.striped-shadow.white:after, button.btn.striped-shadow.white:before {
+    background-image: linear-gradient(135deg,transparent 0,transparent 5px,#fff 5px,#fff 10px,transparent 10px);
+}
+
+button.btn.striped-shadow.blue:after, button.btn.striped-shadow.blue:before {
+    background-image: linear-gradient(135deg,transparent 0,transparent 5px,#4183D7 5px,#4183D7 10px,transparent 10px);
+}
+*/
+button.btn.striped-shadow.dark:after, button.btn.striped-shadow.dark:before {
+    background-image: linear-gradient(135deg,transparent 0,transparent 5px,#F0130B 5px,#F0130B 10px,transparent 10px);
+}
+
+button.btn.striped-shadow:hover:before {
+    max-height: calc(100% - 10px);
+}
+
+button.btn.striped-shadow:after {
+    width: calc(100% - 4px);
+    height: 8px;
+    left: -10px;
+    bottom: -9px;
+    background-size: 15px 8px;
+    background-repeat: repeat-x;
+}
+button.btn.striped-shadow:after, button.btn.striped-shadow:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    transition: max-height .3s,width .3s,-webkit-transform .3s;
+    transition: transform .3s,max-height .3s,width .3s;
+    transition: transform .3s,max-height .3s,width .3s,-webkit-transform .3s;
+}
+
+.btn.striped-shadow:hover {
+    -webkit-transform: translate(-12px,12px);
+    -ms-transform: translate(-12px,12px);
+    transform: translate(-12px,12px);
+  z-index: 3;
+}
+
+button.btn.striped-shadow:hover:after, button.btn.striped-shadow:hover:before {
+    -webkit-transform: translate(12px,-12px);
+    -ms-transform: translate(12px,-12px);
+    transform: translate(12px,-12px);
+}
+button.btn.striped-shadow:before {
+    width: 8px;
+    max-height: calc(100% - 5px);
+    height: 100%;
+    left: -12px;
+    bottom: -5px;
+    background-size: 8px 15px;
+    background-repeat: repeat-y;
+    background-position: 0 100%;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    /*width: 400px;
+    height: 250px;*/
     }
+
+.flex-item {
+    /*background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;*/
+    margin: 11px;
+}
+
 </style>
 
+ 
 
-  <div class="w3-display-topleft w3-container w3-xlarge">
-    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
-    <p><button onclick="document.getElementById('merch').style.display='block'" class="w3-button w3-black">merchandise</button></p>
 
-    <p><button class="w3-button w3-black"><a href="https://www.ubereats.com/austin/food-delivery/crazy-rickys/8X46CIiPRfabM7DkLQmsFA/" class="fa fa-cutlery w3-text-xsmall w3-hover-grey" style= "text-decoration: none;" target="_blank"><span style="font-family: 'Raleway'"> uber eats</span></button></a></p>
+  <!-- <div class="w3-display-topleft w3-margin-small w3-container w3-xlarge"> -->
 
-    <p><button onclick="document.getElementById('contact').style.display='block'" aria-hidden="true" class="fa fa-fire w3-button w3-black" style="text-decoration: none"><span style="font-family: 'Raleway'"> catering</span></button></p>
+<div class="w3-display-topleft flex-container rectangle">
+    <button onclick="document.getElementById('menu').style.display='block'" class="flex-item btn striped-shadow dark" 
+    style="margin-top: -23px; margin-bottom: 3px"><span>menu</span></button>
+    <br>
+    <button onclick="document.getElementById('merch').style.display='block'" class="flex-item btn striped-shadow dark"><span>merch</span></button><br>
+
+    <button class="flex-item btn striped-shadow dark"><span><a href="https://www.ubereats.com/austin/food-delivery/crazy-rickys/8X46CIiPRfabM7DkLQmsFA/" class="fa fa-cutlery w3-text-xsmall" style= "text-decoration: none;" target="_blank"> uber eats</a></button></span><br>
+
+    <button onclick="document.getElementById('contact').style.display='block'" class="flex-item btn striped-shadow dark fa fa-fire" style="font-family: 'Raleway'"><span> catering</span></button><br>
+</button>    
     
-    <p style="position: relative; z-index: 1;"><button class="w3-button w3-black"><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" class="fa fa-facebook-official" style="text-decoration: none" target="_blank">              </button></a></p>
   </div>
-  <div class="w3-display-bottomleft w3-container w3-black ">
-    <p class="w3-xlarge w3-opacity-off">tuesday-sunday 6pm-3am</p>
+
+  
+  <div class="w3-display-bottomleft w3-small w3-container" style="background-color: #F0130B">
+    <p class="w3-large w3-opacity-off">tuesday-sunday 6pm-3am</p>
     <p class="w3-large">1817 E 12th St, Austin Texas 78702</p>
     <p class="w3-large w3-opacity-off">512-375-6495</p>
     <p class="w3-opacity-off">
-    powered by <a href="https://apekearo.github.io/Bootstrap-Portfolio/index.html" target="_blank">Anthony Pekearo</a></p>
+    powered by <a href="https://apekearo.github.io/showoff" target="_blank">Anthony Pekearo</a></p>
+
+    <!-- <div class="w3-display-bottom"> -->
+    <!-- <p style="position: relative; z-index: 1;"> -->
+    <button class="w3-button w3-yellow"><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" class="fa fa-facebook-official" style="text-decoration: none; margin: 0" target="_blank"></button></a>
+<!--     </p>
+<!--  </div>-->    
     <!-- Start of SimpleHitCounter Code -->
-<div align="center"><a href="http://www.simplehitcounter.com" target="_blank"><img src="http://simplehitcounter.com/hit.php?uid=2277383&f=16777215&b=0" border="0" height="18" width="83" alt="web counter"></a><br><a href="http://www.simplehitcounter.com" target="_blank" style="text-decoration:none;">visitor counter</a></div>
+<div style="display: inline-block;"><a href="http://www.simplehitcounter.com" target="_blank"><img src="http://simplehitcounter.com/hit.php?uid=2281551&f=0&b=16711680" border="0" height="18" width="83" alt="web counter"></a><br><a href="http://www.simplehitcounter.com" target="_blank" style="text-decoration:none;">web counter</a></div>
 <!-- End of SimpleHitCounter Code -->
+
   </div>
 </div>
 
@@ -143,7 +302,7 @@ body, html {height: 100%}
     </div>
     <div class="w3-container w3-center">
     <a href="http://finesoutherngentlemen.com/store/greazy" target="_blank">
-    <img src="burglarBlack.jpg" alt= "shirt" height="375" width="345" style="box-shadow: 10px 10px 5px grey; margin-right: 75px; margin-left: 20px;"></a>
+    <img src="burglarBlack.jpg" alt= "shirt" height="375" width="345" style="box-shadow: 10px 10px 11px grey; margin-right: 75px; margin-left: 20px;"></a>
     <!-- <a href="#">
     <img src="burglarColor.jpg" alt= "shirt" height="255" width="255" style="box-shadow: 10px 10px 5px grey; margin-right: 15px; margin-bottom: 11px;"></a> -->
     <a href="http://finesoutherngentlemen.com/store/stones" target="_blank">
@@ -167,7 +326,7 @@ window.onclick = function(event){if (event.target == modal){
       <form method="POST" action="https://formspree.io/crazyrickyatx@gmail.com">
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" name="name" required name="Name"></p>
         <p><input class="w3-input w3-padding-16 w3-border" name="phone" type="number" placeholder="Your Phone Number" required name="People"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" name="date" type="datetime-local" placeholder="Date and time" required name="date" id = "date"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" name="date" type="datetime-local" placeholder="Date and time" id = "date"></p>
         <p><input class="w3-input w3-padding-16 w3-border" name="message" type="text" placeholder="Message \ Request an order of food" required name="Message"></p>
         <p><button class="w3-button" type="submit" value="Send">SEND MESSAGE</button></p>
       </form>
