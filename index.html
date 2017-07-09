@@ -221,7 +221,7 @@ button.btn.striped-shadow:before {
 
     <button class="flex-item btn striped-shadow dark"><span><a href="https://www.ubereats.com/austin/food-delivery/crazy-rickys/8X46CIiPRfabM7DkLQmsFA/" class="fa fa-cutlery w3-text-xsmall" style= "text-decoration: none;" target="_blank"> uber eats</a></button></span><br>
 
-    <button onclick="document.getElementById('contact').style.display='block'" class="flex-item btn striped-shadow dark fa fa-fire" style="font-family: 'Raleway'"><span> catering</span></button><br>
+    <button onclick="document.getElementById('contact').style.display='block'" class="flex-item btn striped-shadow dark "><span style="padding: 10px" class="fa fa-fire">catering</span></button><br>
 </button>    
     
   </div>
@@ -236,7 +236,7 @@ button.btn.striped-shadow:before {
 
     <!-- <div class="w3-display-bottom"> -->
     <!-- <p style="position: relative; z-index: 1;"> -->
-    <button class="w3-button w3-yellow"><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" class="fa fa-facebook-official" style="text-decoration: none; margin: 0" target="_blank"></button></a>
+    <button class="w3-button w3-yellow" style="border-style: dashed;"><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" class="fa fa-facebook-official w3-large" target="_blank"></button></a>
 <!--     </p>
 <!--  </div>-->    
     <!-- Start of SimpleHitCounter Code -->
@@ -249,7 +249,7 @@ button.btn.striped-shadow:before {
 <!-- Menu Modal -->
 <div id="menu" class="w3-modal ferry">
   <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black">
+    <div class="w3-container w3-red">
       <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">X X X</span>
       <h1>Entrees</h1>
     </div>
@@ -267,7 +267,7 @@ button.btn.striped-shadow:before {
       <h1>French Fries <b> $5.00</b></h1>
       <h5>crinkle cut</h5>
     </div>
-     <div class="w3-container w3-black">
+     <div class="w3-container w3-red">
       <h1>Add-Ons $1</h1>
     </div>
     <div class="w3-container">
@@ -279,7 +279,7 @@ button.btn.striped-shadow:before {
       <h5>Sriracha Cole Slaw </h5>
       <h5>Fresh Avocado</h5>
     </div>
-    <div class="w3-container w3-black">
+    <div class="w3-container w3-red">
       <h1>Sides</h1>
     </div>
     <div class="w3-container">
@@ -296,7 +296,7 @@ button.btn.striped-shadow:before {
 
 <div id="merch" class="w3-modal ferry">
   <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black">
+    <div class="w3-container w3-red">
       <span onclick="document.getElementById('merch').style.display='none'" class="w3-button w3-display-topright w3-large">X X X</span>
       <h1>Look Crazy With A Shirt!!</h1>
     </div>
@@ -317,7 +317,7 @@ window.onclick = function(event){if (event.target == modal){
 <!-- Contact Modal -->
 <div id="contact" class="w3-modal ferry">
   <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black">
+    <div class="w3-container w3-red">
       <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">X X X</span>
       <h1>Contact</h1>
     </div>
@@ -326,7 +326,7 @@ window.onclick = function(event){if (event.target == modal){
       <form method="POST" action="https://formspree.io/crazyrickyatx@gmail.com">
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" name="name" required name="Name"></p>
         <p><input class="w3-input w3-padding-16 w3-border" name="phone" type="number" placeholder="Your Phone Number" required name="People"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" name="date" type="datetime-local" placeholder="Date and time" id = "date"></p>
+        <!-- <p><input class="w3-input w3-padding-16 w3-border" name="date" type="datetime-local" placeholder="Date and time" id = "date"></p> -->
         <p><input class="w3-input w3-padding-16 w3-border" name="message" type="text" placeholder="Message \ Request an order of food" required name="Message"></p>
         <p><button class="w3-button" type="submit" value="Send">SEND MESSAGE</button></p>
       </form>
