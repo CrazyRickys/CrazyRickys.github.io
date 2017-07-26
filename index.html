@@ -29,7 +29,7 @@
     <img src="burglarWhite.jpg" class="mySlides w3-animate-top" style="width: 100%; height: 80%">
       <img class="mySlides w3-animate-top" src = "fiveYear.jpg" style="width:100%; height: 89%">
   </div>
-    <h1 class="logo">Damn Good Food</h1>
+    <h1 id= "damn" class="logo">Damn Good Food</h1>
 </div>
   
     <!-- <p style="text-shadow:3px 2px 3px black">Crazy Ricky's</p><br><h1 style="text-shadow:3px 2px 3px black">Damn Good Food</h1> -->
@@ -67,6 +67,10 @@ p {font-size: 20;}
   width: 120px; height: 130px; display: inline-flex;
 }
     }
+  /*@media (min-width:500px) and (orientation: landscape) {
+    #damn {display:none;}
+    .myslides {display: none;}
+    }*/
 
 
 
@@ -110,7 +114,7 @@ p {font-size: 20;}
 
 .rectangle{
   /*margin-top: ;*/
-  margin: 15px;
+  margin: 10px;
   
   width: 100%;
   display: flex;
@@ -299,7 +303,7 @@ button.btn.striped-shadow:before {
 
     <button class="flex-item btn striped-shadow dark"><span style="padding: 2px"><a href="https://www.ubereats.com/austin/food-delivery/crazy-rickys/8X46CIiPRfabM7DkLQmsFA/" class="fa fa-cutlery w3-text-xsmall" style= "text-decoration: none;" target="_blank"> uber eats</a></button></span><br>
 
-    <button onclick="document.getElementById('contact').style.display='block'" class="flex-item btn striped-shadow dark "><span style="padding: 10px" class="fa fa-fire"> catering</span></button><br>
+    <button onclick="document.getElementById('contact').style.display='block'" class="flex-item btn striped-shadow dark "><span style="padding: 10px" class="fa fa-fire"> catering</button></span><br>
     </button>  
     <button class="flex-item btn striped-shadow dark"><span style="padding: 2px"><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" id = "facebook" class="fa fa-facebook-official w3-large" target="_blank" style="text-decoration: none;"> facebook</button></a></span>
 </div>
@@ -307,7 +311,7 @@ button.btn.striped-shadow:before {
   
   <div class="w3-display-bottomleft w3-small w3-container" id= "square">
     <p class="w3-large w3-opacity-off" id= "hours">tuesday-sunday 6pm-3am</p>
-    <p class="w3-large" id = "address">1817 E 12th St, Austin Texas 78702</p>
+    <a href="https://g.co/kgs/fvw14G" style="text-decoration-style: double;" target="_blank"><p class="w3-large" id = "address">1817 E 12th St, Austin Texas 78702</p></a>
     <p class="w3-large w3-opacity-off" id= "phone">512-375-6495</p>
     <p class="w3-opacity-off" id="poweredBy">
     powered by <a href="https://apekearo.github.io/showoff" target="_blank">Anthony Pekearo</a></p>
