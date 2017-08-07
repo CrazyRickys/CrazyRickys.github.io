@@ -22,12 +22,14 @@
 <div class="w3-content w3-section w3-hide-small" style="width: 260px; height: 300px;">
   <img class="mySlides w3-animate-top" src = "burglarBlack.jpg" style="width:100%">
     <img class="mySlides w3-animate-top" src = "tongue.jpg" style="width:100%; height: 80%">
+      <img class="mySlides w3-animate-top" src = "burglarPink.png" style="width:100%">
+        <img class="mySlides w3-animate-top" src = "tonguePink.png" style="width:100%">
   <img src="burglarColor.jpg" class="mySlides w3-animate-top" style="width: 100%">
     <img class="mySlides w3-animate-top" src = "tongue1.jpg" style="width:100%">
     <img src="burglarWhite.jpg" class="mySlides w3-animate-top" style="width: 100%; height: 80%">
       <img class="mySlides w3-animate-top" src = "fiveYear.jpg" style="width:100%; height: 89%">
   </div>
-    <h1 class="logo">Damn Good Food</h1>
+    <h1 id= "damn" class="logo">Damn Good Food</h1>
 </div>
   
     <!-- <p style="text-shadow:3px 2px 3px black">Crazy Ricky's</p><br><h1 style="text-shadow:3px 2px 3px black">Damn Good Food</h1> -->
@@ -48,7 +50,7 @@ body, html {height: 100%}
 @media only screen and (max-width: 350px) {
    .bgimg{ background-image: url("truck2.jpg")}
 .logo{width: 100px; height: 80px; margin: 3px; font-size: 40%;}
-.rectangle { height: 190px; margin-top: 35px; padding: 10px; }
+.rectangle { height: 180px; margin-top: 12px; padding: 2px; }
 #square { width: 100%; height: 160px;}
 p {font-size: 20;}
   #facebook{float: right;}
@@ -64,7 +66,15 @@ p {font-size: 20;}
 #tshirt2{
   width: 120px; height: 130px; display: inline-flex;
 }
-    }
+span{height: 30px; width:120px;}
+.btn{width:120px;}
+button{width:120px;}
+.flex-item{width:120px;}
+flex-item.btn.striped-shadow.dark{width: 120px;}
+  /*@media (min-width:500px) and (orientation: landscape) {
+    #damn {display:none;}
+    .myslides {display: none;}
+    }*/
 
 
 
@@ -107,8 +117,8 @@ p {font-size: 20;}
 }*/
 
 .rectangle{
-  margin-top: 0;
-  margin: 3rem auto;
+  /*margin-top: ;*/
+  margin: 10px;
   
   width: 100%;
   display: flex;
@@ -118,7 +128,7 @@ button {
     /*overflow: visible;*/
     border: 0;
   padding: 0;
-  margin: 1.8rem;
+  margin: 5px;
 }
 .btn.striped-shadow span {
     display: block;
@@ -236,7 +246,7 @@ button.btn.striped-shadow:before {
     /*background-color: cornflowerblue;
     width: 100px;
     height: 100px;*/
-    margin: 11px;
+    margin: 4px;
 }
 #poster {
 -webkit-animation: background 5s cubic-bezier(1,0,0,1) infinite;
@@ -291,33 +301,32 @@ button.btn.striped-shadow:before {
   <!-- <div class="w3-display-topleft w3-margin-small w3-container w3-xlarge"> -->
 
 <div class="w3-display-topleft flex-container rectangle">
-    <button onclick="document.getElementById('menu').style.display='block'" class="flex-item btn striped-shadow dark" 
-    style="margin-top: -23px; margin-bottom: 3px"><span>menu</span></button>
+    <button onclick="document.getElementById('menu').style.display='block'" class="flex-item btn striped-shadow dark"><span style="padding: 2px">menu</span></button>
     <br>
-    <button onclick="document.getElementById('merch').style.display='block'" class="flex-item btn striped-shadow dark"><span>merch</span></button><br>
+    <button onclick="document.getElementById('merch').style.display='block'" class="flex-item btn striped-shadow dark"><span style="padding: 2px">merch</span></button><br>
 
-    <button class="flex-item btn striped-shadow dark"><span><a href="https://www.ubereats.com/austin/food-delivery/crazy-rickys/8X46CIiPRfabM7DkLQmsFA/" class="fa fa-cutlery w3-text-xsmall" style= "text-decoration: none;" target="_blank"> uber eats</a></button></span><br>
+    <button class="flex-item btn striped-shadow dark"><span style="padding: 2px"><a href="https://www.ubereats.com/austin/food-delivery/crazy-rickys/8X46CIiPRfabM7DkLQmsFA/" class="fa fa-cutlery w3-text-xsmall" style= "text-decoration: none;" target="_blank"> uber eats</a></button></span><br>
 
-    <button onclick="document.getElementById('contact').style.display='block'" class="flex-item btn striped-shadow dark "><span style="padding: 10px" class="fa fa-fire">catering</span></button><br>
-</button>    
-    
-  </div>
+    <button onclick="document.getElementById('contact').style.display='block'" class="flex-item btn striped-shadow dark "><span style="padding: 10px" class="fa fa-fire"> catering</button></span><br>
+    </button>  
+    <button class="flex-item btn striped-shadow dark"><span style="padding: 2px"><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" id = "facebook" class="fa fa-facebook-official w3-large" target="_blank" style="text-decoration: none;"> facebook</button></a></span>
+</div>
 
   
   <div class="w3-display-bottomleft w3-small w3-container" id= "square">
-    <p class="w3-large w3-opacity-off" id= "hours">tuesday-sunday 6pm-3am</p>
-    <p class="w3-large" id = "address">1817 E 12th St, Austin Texas 78702</p>
-    <p class="w3-large w3-opacity-off" id= "phone">512-375-6495</p>
+    <p class="w3-large w3-opacity-off" id= "hours">tuesday-sunday 8pm-3am</p>
+    <a href="https://g.co/kgs/fvw14G" style="text-decoration-style: double;" target="_blank"><p class="w3-large" id = "address">1817 E 12th St, Austin Texas 78702</p></a>
+    <a href="tel:1-512-375-6495" style="text-decoration-style: double;"><p class="w3-large w3-opacity-off" id= "phone">512-375-6495</p></a>
     <p class="w3-opacity-off" id="poweredBy">
     powered by <a href="https://apekearo.github.io/showoff" target="_blank">Anthony Pekearo</a></p>
 
     <!-- <div class="w3-display-bottom"> -->
     <!-- <p style="position: relative; z-index: 1;"> -->
-    <button class="w3-button w3-yellow" style="border-style: dashed; margin: 0; margin-right: 28px;"><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" id = "facebook" class="fa fa-facebook-official w3-large" target="_blank"></button></a>
+    <!-- <button class="w3-button w3-yellow" style="border-style: dashed; margin: 0; margin-right: 28px;"><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" id = "facebook" class="fa fa-facebook-official w3-large" target="_blank"></button></a> -->
 <!--     </p>
   </div>-->    
     <!-- Start of SimpleHitCounter Code -->
-<div id = "counter" style="display: inline-block;"><img src="http://simplehitcounter.com/hit.php?uid=2281551&f=0&b=16711680" border="0" height="18" width="83" alt="web counter"><br>web counter</div>
+<div id = "counter" class="w3-center"><img src="http://simplehitcounter.com/hit.php?uid=2281551&f=0&b=16711680" border="0" height="18" width="83" alt="web counter"><br>web counter</div>
 <!-- End of SimpleHitCounter Code -->
 
   </div>
