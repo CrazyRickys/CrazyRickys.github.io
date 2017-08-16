@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<title>Crazy Ricky's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('truck3.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(30%);
+}
+.logo {
+    animation: logo 1s 0s ease infinite;
+    -moz-animation: logo 1s 0s ease infinite;
+    /* Firefox */
+    -webkit-animation: logo 1s 0s ease infinite;
+    /* Safari and Chrome */
+    -o-animation: logo 1s 0s ease infinite;}
+    
+    @keyframes logo {
+    0%,
+    100% {
+    text-shadow: 
+    -.1vw 0vw .1vw #FED128, -.15vw 0vw .2vw #FED128, -.2vw 0vw .2vw #FED128, 
+    -.1vw 0vw 3vw #F0130B, -.2vw 0vw 3vw #F0130B, -.4vw 0vw 3vw #F0130B,
+    -.1vw 0vw 5vw #F0130B, -.2vw 0vw 5vw #F0130B, -.4vw 0vw .8vw #F0130B, .2vw 0vw 10vw #F0130B;
+      color: #FED128;
+    }
+    50% {
+    text-shadow: 
+    -.1vw 0vw .1vw #705C12, -.15vw 0vw .2vw #705C12, -.2vw 0vw .2vw #705C12, 
+    -.1vw 0vw .1vw #5C0704, -.2vw 0vw .1vw #5C0704, -.4vw 0vw .1vw #5C0704,
+    -.1vw 0vw .2vw #5C0704, -.2vw 0vw .2vw #5C0704, -.4vw 0vw .2vw #5C0704, .2vw 0vw .5vw #5C0704;
+      color: #705C12;
+    }
+  }
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p class="logo">Crazy Ricky's</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
+    <p><button onclick="document.getElementById('merch').style.display='block'" class="w3-button w3-black">merch</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <h1 class="w3-xlarge" style="text-shadow:1px 1px 0 #444"><b>Daily 4pm-3am</b></h1>
+    <p class="w3-large">2513 San Antonio St. 78705</p>
+    <p><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" class="w3-margin" target="_blank">FACEBOOK</a><a href="https://www.ubereats.com/austin/food-delivery/crazy-rickys/8X46CIiPRfabM7DkLQmsFA/" class="w3-margin" target="_blank">UBER EATS</a></p>
+    <div align="center"><img src="http://simplehitcounter.com/hit.php?uid=2289714&f=16711680&b=0" border="0" height="18" width="83" alt="web counter"></div>
+
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal ferry">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-red">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">X X X</span>
+      <h1>Entrees</h1>
+    </div>
+    <div class="w3-container">
+      <h1>Cheese Burger <b>$6.00</b></h1>
+      <h5>lettuce,tomato,pickle,onion,mayo</h5>
+      <h1>Double Cheeseburger <b>$9</b></h1>
+      <h5>make it a triple for $3 more!</h5>
+      <h1>Veggie Burger <b> $6.00</b></h1>
+      <h5>vegan patty,cheese,lettuce,tomato,pickle<br>**Zagat Rated Top 5 In Austin**</h5>
+      <h1>Hot Dog <b> $6.00</b></h1>
+      <h5>Hebrew National 100% beef kosher frank</h5>
+      <h1>Frito Pie <b> $4.00</b></h1>
+      <h5>vegan chili, cheddar,and sour cream</h5>
+      <h1>French Fries <b> $5.00</b></h1>
+      <h5>crinkle cut</h5>
+    </div>
+     <div class="w3-container w3-red">
+      <h1>Add-Ons $1</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Bacon </h5>
+      <h5>Fried Egg </h5>
+      <h5>Chili $ Cheese</h5>
+      <h5>Grilled Jalapeno </h5>
+      <h5>Grilled Pineapple </h5>
+      <h5>Sriracha Cole Slaw </h5>
+      <h5>Fresh Avocado</h5>
+    </div>
+    <div class="w3-container w3-red">
+      <h1>Sides</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Sriracha Cole Slaw <b>$1.00</b></h5>
+      <h5>Whole Dill Pickle <b>$2.00</b></h5>
+      <h5>Jalapeno Whole Dill Pickle <b>$3.00</b></h5>
+      <h5>Bottled Water <b>$1.00</b></h5>
+    </div>
+   
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="merch" class="w3-modal ferry">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-red">
+      <span onclick="document.getElementById('merch').style.display='none'" class="w3-button w3-display-topright w3-large">X X X</span>
+      <h1>Look Crazy With A Shirt!!</h1>
+    </div>
+    <div class="w3-container w3-center">
+    <a href="http://finesoutherngentlemen.com/store/greazy" target="_blank">
+    <img id = "tshirt1" src="burglarBlack.jpg" alt= "shirt" height="375" width="345" style="box-shadow: 10px 10px 11px grey; margin-right: 75px; margin-left: 20px;"></a>
+    <!-- <a href="#">
+    <img src="burglarColor.jpg" alt= "shirt" height="255" width="255" style="box-shadow: 10px 10px 5px grey; margin-right: 15px; margin-bottom: 11px;"></a> -->
+    <a href="http://finesoutherngentlemen.com/store/stones" target="_blank">
+    <img id = "tshirt2" src="tongue1.jpg" alt= "shirt" height="375" width="345" style="box-shadow: 10px 10px 5px grey"></a>
+    </div></div></div>
+
+</body>
+  <script>
+    window.onclick = function(event){
+  var menuModal = document.getElementById('menu');
+  var merchModal = document.getElementById('merch');
+  if (event.target == menuModal){
+    menuModal.style.display = "none";
+  }else if(event.target == contactModal){
+    contactModal.style.display = "none";
+  }
+   else if(event.target == merchModal){
+    merchModal.style.display = "none";
+   }
+}
+</script>
+</html>
+

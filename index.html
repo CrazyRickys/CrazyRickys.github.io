@@ -1,74 +1,81 @@
 <!DOCTYPE html>
-<html>
-<title>Crazy Ricky's</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h5 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-    background-image: url('truck3.jpg');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-    -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(30%);
-}
-.logo {
-    animation: logo 1s 0s ease infinite;
-    -moz-animation: logo 1s 0s ease infinite;
-    /* Firefox */
-    -webkit-animation: logo 1s 0s ease infinite;
-    /* Safari and Chrome */
-    -o-animation: logo 1s 0s ease infinite;}
-    
-    @keyframes logo {
-    0%,
-    100% {
-    text-shadow: 
-    -.1vw 0vw .1vw #FED128, -.15vw 0vw .2vw #FED128, -.2vw 0vw .2vw #FED128, 
-    -.1vw 0vw 3vw #F0130B, -.2vw 0vw 3vw #F0130B, -.4vw 0vw 3vw #F0130B,
-    -.1vw 0vw 5vw #F0130B, -.2vw 0vw 5vw #F0130B, -.4vw 0vw .8vw #F0130B, .2vw 0vw 10vw #F0130B;
-      color: #FED128;
-    }
-    50% {
-    text-shadow: 
-    -.1vw 0vw .1vw #705C12, -.15vw 0vw .2vw #705C12, -.2vw 0vw .2vw #705C12, 
-    -.1vw 0vw .1vw #5C0704, -.2vw 0vw .1vw #5C0704, -.4vw 0vw .1vw #5C0704,
-    -.1vw 0vw .2vw #5C0704, -.2vw 0vw .2vw #5C0704, -.4vw 0vw .2vw #5C0704, .2vw 0vw .5vw #5C0704;
-      color: #705C12;
-    }
-  }
-</style>
-<body>
+<html lang="en">
 
-<div class="bgimg w3-display-container w3-text-white">
-  <div class="w3-display-middle w3-jumbo">
-    <p class="logo">Crazy Ricky's</p>
-  </div>
-  <div class="w3-display-topleft w3-container w3-xlarge">
-    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
-    <p><button onclick="document.getElementById('merch').style.display='block'" class="w3-button w3-black">merch</button></p>
-  </div>
-  <div class="w3-display-bottomleft w3-container">
-    <h1 class="w3-xlarge" style="text-shadow:1px 1px 0 #444"><b>Daily 4pm-3am</b></h1>
-    <p class="w3-large">2513 San Antonio St. 78705</p>
-    <p><a href="https://www.facebook.com/Crazy-Rickys-601269506561520/" class="w3-margin" target="_blank">FACEBOOK</a><a href="https://www.ubereats.com/austin/food-delivery/crazy-rickys/8X46CIiPRfabM7DkLQmsFA/" class="w3-margin" target="_blank">UBER EATS</a></p>
-    <div align="center"><img src="http://simplehitcounter.com/hit.php?uid=2289714&f=16711680&b=0" border="0" height="18" width="83" alt="web counter"></div>
+<head>
 
-  </div>
-</div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- Menu Modal -->
-<div id="menu" class="w3-modal ferry">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-red">
-      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">X X X</span>
-      <h1>Entrees</h1>
-    </div>
-    <div class="w3-container">
+    <title>Crazy Ricky's American A La Carte</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
+   <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC2bn09ZM8jNrPx2UDsb96a0ql3BTssvs&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.js"></script>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <a class="navbar-brand" href="#page-top" style="color:#FF6EC7">Crazy Ricky's</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#myModal">
+                    Food Menu</a>
+                    </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#download">Merch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!-- modal div and content -->
+        <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog"> 
+      <!-- content -->
+      <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="menu">Crazy Ricky Menu</h4>
+      </div>
+      <div class="modal-body">
+        <div id="menuText">
+            
       <h1>Cheese Burger <b>$6.00</b></h1>
       <h5>lettuce,tomato,pickle,onion,mayo</h5>
       <h1>Double Cheeseburger <b>$9</b></h1>
@@ -81,11 +88,10 @@ body, html {height: 100%}
       <h5>vegan chili, cheddar,and sour cream</h5>
       <h1>French Fries <b> $5.00</b></h1>
       <h5>crinkle cut</h5>
-    </div>
-     <div class="w3-container w3-red">
+    
+     
       <h1>Add-Ons $1</h1>
-    </div>
-    <div class="w3-container">
+    
       <h5>Bacon </h5>
       <h5>Fried Egg </h5>
       <h5>Chili $ Cheese</h5>
@@ -93,50 +99,131 @@ body, html {height: 100%}
       <h5>Grilled Pineapple </h5>
       <h5>Sriracha Cole Slaw </h5>
       <h5>Fresh Avocado</h5>
-    </div>
-    <div class="w3-container w3-red">
-      <h1>Sides</h1>
-    </div>
-    <div class="w3-container">
+     <h1>Sides</h1>
+    
       <h5>Sriracha Cole Slaw <b>$1.00</b></h5>
       <h5>Whole Dill Pickle <b>$2.00</b></h5>
       <h5>Jalapeno Whole Dill Pickle <b>$3.00</b></h5>
       <h5>Bottled Water <b>$1.00</b></h5>
+    
+        </div>
+  </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
-   
+
   </div>
 </div>
 
-<!-- Contact Modal -->
-<div id="merch" class="w3-modal ferry">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-red">
-      <span onclick="document.getElementById('merch').style.display='none'" class="w3-button w3-display-topright w3-large">X X X</span>
-      <h1>Look Crazy With A Shirt!!</h1>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(maiden.TTF);
+}
+@font-face {
+    font-family: secondFont;
+    src: url(MetalMania-Regular.ttf);
+}
+.big {
+   font-family: myFirstFont;
+   color:#FF6EC7
+}
+.small {
+    font-family: secondFont;
+    color:lightgreen
+}
+</style>                        
+                         <h1 class="big brand-heading">Crazy Rickys</h1>
+                        <p class="small intro-text">American A La Carte</p> 
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>About Crazy Ricky's</h2>
+                    <p>Crazy Ricky's is the home for food you won't take home to mom.  Your gonna bring your date and know that she'll get crazy after eating this. <a href = "https://fsgprints.myshopify.com/collections/crazy-rickys">Fine Southern Gentleman</a> has made us some awesome shirts you can buy at our location or online.  If you're ready to get full and enjoy yourself.  
+    Come on by. <a href="http://www.holeinthewallaustin.com">Hole in the Wall</a>Is our new location.  We are excited about this new bringing yall American A La Carte food for years to come.</p>
+                                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section content-section text-center">
+      
+                
+            
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block img-fluid" src="burglarPink.png" alt="First slide">
     </div>
-    <div class="w3-container w3-center">
-    <a href="http://finesoutherngentlemen.com/store/greazy" target="_blank">
-    <img id = "tshirt1" src="burglarBlack.jpg" alt= "shirt" height="375" width="345" style="box-shadow: 10px 10px 11px grey; margin-right: 75px; margin-left: 20px;"></a>
-    <!-- <a href="#">
-    <img src="burglarColor.jpg" alt= "shirt" height="255" width="255" style="box-shadow: 10px 10px 5px grey; margin-right: 15px; margin-bottom: 11px;"></a> -->
-    <a href="http://finesoutherngentlemen.com/store/stones" target="_blank">
-    <img id = "tshirt2" src="tongue1.jpg" alt= "shirt" height="375" width="345" style="box-shadow: 10px 10px 5px grey"></a>
-    </div></div></div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="tonguePink.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="fiveYear.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>    
+         
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Connect With Us</h2>
+                    <p>Please leave a review <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a> on Start Bootstrap to give some feedback about this theme!</p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Your Website 2017</p>
+        </div>
+    </footer>
+
+    
 
 </body>
-  <script>
-    window.onclick = function(event){
-  var menuModal = document.getElementById('menu');
-  var merchModal = document.getElementById('merch');
-  if (event.target == menuModal){
-    menuModal.style.display = "none";
-  }else if(event.target == contactModal){
-    contactModal.style.display = "none";
-  }
-   else if(event.target == merchModal){
-    merchModal.style.display = "none";
-   }
-}
-</script>
-</html>
 
+</html>
