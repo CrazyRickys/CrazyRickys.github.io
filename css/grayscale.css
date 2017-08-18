@@ -37,10 +37,15 @@ p {
       line-height: 1.6;
       margin: 0 0 35px; } }
 
-@media (min-width: 500px) { 
-#caro {margin: auto}
- }
-#caro {margin:auto}
+
+.caro {margin:auto}
+.img-fluid {
+  width: 100%
+}
+ @media (max-width: 500px) { 
+.caro {margin: auto}
+ 
+} 
 
       a {
   -webkit-transition: all 0.2s ease-in-out;
