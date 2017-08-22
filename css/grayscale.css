@@ -44,6 +44,9 @@ p {
 }
  @media (max-width: 500px) { 
 .caro {margin: auto}
+#uberTag {
+  margin: 0px
+}
 } 
 
       a {
@@ -109,7 +112,7 @@ p {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+  background: url("../img/truck8.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -155,7 +158,7 @@ p {
 
 .download-section {
   color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+  background: url("../img/intro-bg.jpg") no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -171,7 +174,10 @@ p {
     padding-top: 200px;
     padding-bottom: 200px; }
   #map {
-    height: 350px; } }
+    height: 350px; } 
+  #uberTag{
+    margin-left: 25px;
+  }}
 
 .btn {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
