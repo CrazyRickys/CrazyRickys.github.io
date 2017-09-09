@@ -80,10 +80,10 @@ p {
     #mainNav .navbar-nav .nav-item:hover {
       color: fade(white, 80%);
       outline: none;
-      background-color: transparent; }
+      background-color: black; }
     #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
       outline: none;
-      background-color: transparent; }
+      background-color: black; }
   @media (min-width: 992px) {
     #mainNav {
       padding-top: 20px;
@@ -93,7 +93,7 @@ p {
       transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
       letter-spacing: 1px;
       border-bottom: none;
-      background: transparent; }
+      background: black; }
       #mainNav.navbar-shrink {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -112,7 +112,7 @@ p {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/truck8.jpg") no-repeat bottom center scroll;
+  background: url("../phone1.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -127,6 +127,11 @@ p {
       font-size: 18px; }
   @media (min-width: 768px) {
     .masthead {
+      background: url("../truck11.jpg") no-repeat bottom center scroll;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
       height: 100%;
       padding: 0; }
       .masthead .intro-body .brand-heading {
