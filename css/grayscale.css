@@ -112,7 +112,7 @@ p {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../phone2.png") no-repeat bottom center scroll;
+  background: url("../truck17.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -127,7 +127,7 @@ p {
       font-size: 18px; }
   @media (min-width: 768px) {
     .masthead {
-      background: url("../truck11.jpg") no-repeat bottom center scroll;
+      background: url("../truck16.jpg") no-repeat bottom center scroll;
       -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
