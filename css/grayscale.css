@@ -133,7 +133,8 @@ p {
   -o-background-size: cover;
   background-size: cover;
       height: 100%;
-      padding: 0; }
+      padding: 0;
+      }
       .masthead .intro-body .brand-heading {
         font-size: 100px; }
       .masthead .intro-body .intro-text {
